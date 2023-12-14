@@ -1,0 +1,32 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+a{  
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 20px;
+    height: 100%;
+    overflow-x:hidden ;
+    background-color: #f4f4f4;
+}
+.container{
+   max-width: 1720px;
+   margin: 0 auto;
+}

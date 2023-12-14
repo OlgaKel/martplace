@@ -1,18 +1,632 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Biryani:wght@400;600;700&family=Lora:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+  <div class="content__page">
+    <div class="header__calc" style="background-image: url(../images/main_screen.jpg);">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <a href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li><a href="#">каталог</a></li>
+                <li><a href="#">о компании</a></li>
+                <li><a href="#">вопросы и ответы</a></li>
+                <li><a href="#">вакансии</a></li>
+              </ul>
+            </nav>
+            <div class="header__btn">
+              <a class="header__btn-link" href="#">контакты</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="calc">
+        <div class="container">
+          <div class="calc__wrapper">
+            <div class="calc__inner">
+              <div class="calc__inner-title">
+                Строительство коттеджей
+                и загородных домов «под ключ»
+              </div>
+              <div class="calc__inner-text">
+                Мы все возьмем на себя, Вам останется только завести мебель и отметить новоселье!
+              </div>
+              <div class="calc__inner-link">
+                <a href="#">Рассчитать стоимость дома</a>
+              </div>
+            </div>
+            <div class="calc__stat">
+              <div class="calc__stat-col1">
+                <div class="calc__stat-item">
+                  <div class="calc__stat-num">
+                    12%
+                  </div>
+                  <div class="calc__stat-text">
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                  </div>
+                </div>
+                <div class="calc__stat-item flag ">
+                  <div class="calc__stat-text">
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                  </div>
+                </div>
+                <div class="calc__stat-item">
+                  <div class="calc__stat-num">
+                    20%
+                  </div>
+                  <div class="calc__stat-text">
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                  </div>
+                </div>
+                <div class="calc__stat-item">
+                  <div class="calc__stat-num">
+                    20%
+                  </div>
+                  <div class="calc__stat-text">
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                  </div>
+                </div>
+              </div>
+              <div class="calc__stat-col2">
+                <div class="calc__stat-item flag">
+                  <div class="calc__stat-text">
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit
+                    amet
+                    consectetur.
+                  </div>
+                </div>
+                <div class="calc__stat-item">
+                  <div class="calc__stat-num">
+                    1924
+                  </div>
+                  <div class="calc__stat-text">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </div>
+                </div>
+                <div class="calc__stat-item  flag">
+                  <div class="calc__stat-text">
+                    Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="project">
+      <div class="container">
+        <div class="project__wrapper">
+          <div class="project__inner">
+            <div class="project__inner-title">
+              Популярные <span>проекты</span>
+            </div>
+            <div class="project__inner-text">
+              Мы работаем с соблюдением всех российских норм и стандартов строительства и используем уникальные
+              технологии, позволяющие нашим домам служить нескольким поколениям.
+            </div>
+          </div>
+
+          <div class="project__item-wrapper">
+            <div class="project__items">
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../images/project_1.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 1
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>5 890 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>120 м<sup>2</sup></span>
+                      <p>Этажность:</p><span></span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../images/project_2.png" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 2
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>4 400 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../images/project_3.png" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 1
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <pre>5 890 000p</pre>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../images/project_1.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 1
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>5 890 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>120 м<sup>2</sup></span>
+                      <p>Этажность:</p><span></span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../images/project_2.png" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 2
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>4 400 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="project__items-link">
+              <a href="#">
+                в каталог
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="consultation">
+      <div class="container">
+        <div class="consultation__inner">
+          <div class="consultation__inner-item">
+            <div class="consultation__item-title">
+              НЕ НАШЛИ ПОДХОДЯЩИЙ <span>ПРОЕКТ</span>?
+            </div>
+            <div class="consultation__item-img">
+              <img src="images/consultation.jpg" alt="" width="645" height="422">
+            </div>
+          </div>
+          <div class="consultation__inner-item">
+            <div class="consultation__item-text">
+              Получите <span>консультацию</span> от нашего архитектора-конструктора. Обсудим Ваши пожелания и создадим
+              <span>индивидуальный</span>
+              проект.
+            </div>
+            <div class="consultation__item-list">
+              <p>Согласуем площадь дома, исходя из потребностей Вашей семьи</p>
+              <p>Начертим планировку</p>
+              <p>Создадим 3d модель дома еще до подписания договора и озвучим точную, окончательную стоимость</p>
+            </div>
+            <form class="consultation__form">
+              <div class="consultation__form-inner">
+                <input type="text" placeholder="Имя">
+                <input type="tel" placeholder="+7 (999) 999-99-99">
+                <input type="email" placeholder="E-mail">
+              </div>
+              <button class="consultation__btn" type="submit">получить</button>
+            </form>
+            <div class="consultation__inner-subtext">
+              Нажимая кнопку “ПОЛУЧИТЬ”, Вы даете согласие на <a href="#">обработку своих персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <div class="advantages__title">
+            ПРЕИМУЩЕСТВА
+          </div>
+          <div class="advantages__inner-items">
+
+            <div class="advantages__item">
+              <div class="advantages__item-num">
+                01
+              </div>
+              <div class="advantages__item-title">
+                Комплексный подход
+              </div>
+              <div class="advantages__item-text">
+                Мы предлагаем полный спектр услуг, начиная с проектирования и заканчивая финишной отделкой. Вам не
+                придется принимать непосредственного участия в каждом этапе строительства. Мы обо всем позаботимся.
+              </div>
+            </div>
+
+            <div class="advantages__item">
+              <div class="advantages__item-num">
+                02
+              </div>
+              <div class="advantages__item-title">
+                Выгода
+              </div>
+              <div class="advantages__item-text">
+                Дома, построенные нами, практичны и не теряют свою рыночную стоимость с годами. С нами можно снизить
+                эксплуатационные затраты
+              </div>
+
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-num">
+                03
+              </div>
+              <div class="advantages__item-title">
+                Качество
+              </div>
+              <div class="advantages__item-text">
+                Мы используем только проверенные годами узлы и технические решения. Строим экологичные качественные
+                дома.
+              </div>
+
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-num">
+                04
+              </div>
+              <div class="advantages__item-title">
+                Возможность индивидуального проекта
+              </div>
+              <div class="advantages__item-text">
+                Мы можем разработать уникальный проект, учитывая предпочтения и вкусы наших заказчиков, что позволяет
+                получить загородный дом, полностью соответствующий Вашим желаниям.
+              </div>
+
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-num">
+                05
+              </div>
+              <div class="advantages__item-title">
+                Инновации
+              </div>
+              <div class="advantages__item-text">
+                Используем новые технологии проектирования. Воплощаем в реальность уникальные сложные идеи заказчиков с
+                неизменным соответствием всем установленным стандартам и нормативам.
+              </div>
+            </div>
+
+            <div class="advantages__item">
+              <div class="advantages__item-num">
+                06
+              </div>
+              <div class="advantages__item-title">
+                Многолетний опыт и непревзойденная репутация
+              </div>
+              <div class="advantages__item-text">
+                Наша компания имеет большой опыт в строительстве загородных домов и обладает прочной репутацией
+                надежного
+                и ответственного подрядчика.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="choice">
+      <div class="container">
+        <div class="choice__inner">
+          <div class="choice__block">
+            <div class="choice__block-title">
+              ЭКСКЛЮЗИВНОСТЬ
+              ПРАКТИЧНОСТЬ
+              ТЕХНОЛОГИЧНОСТЬ
+              ФУНКЦИОНАЛЬНОСТЬ
+            </div>
+            <div class="choice__block-text">
+              Погрузитесь в уют и комфорт скандинавских коттеджей!
+              Откройте для себя уникальные дома мечты в нашем каталоге.
+              Выбирайте красоту и функциональность вместе с нами!
+            </div>
+            <div class="choice__block-btn">
+              <a href="#">выбрать красоту</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__title">
+        ГАЛЕРЕЯ ВЫПОЛНЕННЫХ <span>ПРОЕКТОВ</span>
+      </div>
+      <div class="gallery__img">
+        <img class="img1 img-responsive" src="../images/gallery/gallery1.jpg" />
+        <img class="img2 img-responsive" src="../images/gallery/gallery2.jpg" />
+        <img class="img3 img-responsive" src="../images/gallery/gallery3.jpg" />
+        <img class="img4 img-responsive" src="../images/gallery/gallery4.jpg" />
+        <img class="img5 img-responsive" src="../images/gallery/gallery5.jpg" />
+        <img class="img6 img-responsive" src="../images/gallery/gallery6.jpg" />
+        <img class="img7 img-responsive" src="../images/gallery/gallery7.jpg" />
+        <img class="img8 img-responsive" src="../images/gallery/gallery8.jpg" />
+      </div>
+      <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">x</span>
+        <img src="" alt="Popup image" id="popupImage">
+      </div>
+    </section>
+    <section class="selection">
+      <div class="container">
+        <div class="selection__inner">
+          <div class="selection__item">
+            <div class="selection__item-title">
+              ПОДБОР <span>ПРОЕКТА</span>
+            </div>
+            <div class="selection__item-img">
+              <img src="../images/select.jpg" alt="">
+            </div>
+          </div>
+          <div class="selection__select">
+            <form class="selection__select-item">
+              <div class="selection__select-ranges">
+                <div class="selection__select-range">
+                  <div class="selection__select-form">
+                    <div class="selection__select-title">
+                      Выберите цену<span> (₽)</span>
+                    </div>
+                    <input type="number" placeholder="0">
+                    <input type="number" placeholder="3990000">
+                    <input type="range">
+                  </div>
+                </div>
+                <div class="selection__select-range">
+                  <div class="selection__select-form">
+                    <div class="selection__select-title">
+                      Выберите площадь<span> (м<sup>2</sup>)</span>
+                    </div>
+                    <input type="number" placeholder="0">
+                    <input type="number" placeholder="1200">
+                    <input type="range">
+                  </div>
+                </div>
+              </div>
+              <div class="selection__select-title">
+                Технология строительства
+              </div>
+              <select>
+                <option value="">Каркасный дом</option>
+                <option value="">Каркасный дом</option>
+              </select>
+              <button class="selection__btn" type="submit">ПОДОБРАТЬ ПРОЕКТ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="container">
+        <div class="review__wrapper">
+          <div class="review__title">
+            ОТЗЫВЫ
+          </div>
+
+          <div class="review__slider-wrapper">
+            <div class="review__slider">
+              <div class="review__item">
+                <div class="review__item-inner">
+                  <img src="../images/review/review1.jpg" alt="">
+                  <div class="review__item-title">
+                    Дмитрий Молчанов
+                  </div>
+                  <div class="review__item-text">
+                    Коттедж, который мы построили, не только выглядит прекрасно снаружи, но и обустроен с учётом всех
+                    наших потребностей внутри. Мы рады, что выбрали эту компанию для строительства нашего дома.
+                  </div>
+                </div>
+                <div class="review__item-date">
+                  21.11.2023
+                </div>
+              </div>
+
+              <div class="review__item">
+                <div class="review__item-inner">
+                  <img src="../images/review/review2.jpg" alt="">
+                  <div class="review__item-title">
+                    Мария Гамидова
+                  </div>
+                  <div class="review__item-text">
+                    Спасибо за качественное исполнение и профессиональный подход к строительству нашего коттеджа. Мы с
+                    удовольствием рекомендуем вас всем своим друзьям и знакомым.
+                  </div>
+                </div>
+                <div class="review__item-date">
+                  13.10.2023
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__item-inner">
+                  <img src="../images/review/review3.jpg" alt="">
+                  <div class="review__item-title">
+                    Анатолий Толмачев
+                  </div>
+                  <div class="review__item-text">
+                    Коттедж, который мы построили, стал настоящим уютным уголком для нашей семьи. Мы очень довольны тем,
+                    как все выполнено качественно и профессионально.
+                  </div>
+                </div>
+                <div class="review__item-date">
+                  12.09.2023
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__item-inner">
+                  <img src="../images/review/review3.jpg" alt="">
+                  <div class="review__item-title">
+                    Анатолий Толмачев
+                  </div>
+                  <div class="review__item-text">
+                    Коттедж, который мы построили, стал настоящим уютным уголком для нашей семьи. Мы очень довольны тем,
+                    как все выполнено качественно и профессионально.
+                  </div>
+                </div>
+                <div class="review__item-date">
+                  12.09.2023
+                </div>
+              </div>
+              <div class="review__item">
+                <div class="review__item-inner">
+                  <img src="../images/review/review3.jpg" alt="">
+                  <div class="review__item-title">
+                    Анатолий Толмачев
+                  </div>
+                  <div class="review__item-text">
+                    Коттедж, который мы построили, стал настоящим уютным уголком для нашей семьи. Мы очень довольны тем,
+                    как все выполнено качественно и профессионально.
+                  </div>
+                </div>
+                <div class="review__item-date">
+                  12.09.2023
+                </div>
+              </div>
+
+            </div>
+            <div class="review__btn">
+              <button class="btn active">Сообщение</button> /
+              <button class="btn">Видео</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-logo">
+          <a href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="footer__inner-menu">
+          <ul class="footer__list">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="#">Вакансии</a></li>
+          </ul>
+        </div>
+        <a class="footer__inner-btn">Контакты</a>
+      </div>
+      <div class="footer__copyright">
+        PremiumHouse © 2023. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
