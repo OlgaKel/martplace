@@ -596,23 +596,29 @@ position: absolute;
   position: absolute;
   top: 20px;
   right: 50px;
-  font-size: 60px;
-  color: #fff;
+  font-size: 100px;
   cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  line-height: 50px;
+  padding: 10px;
 }
 .close-button:hover{
-  color: red;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #popupImage {
   display: block;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border:1px solid #fff;
+  border-radius: 9px;
 }
 
 @media (max-width:670px) {
@@ -651,22 +657,98 @@ position: absolute;
 .selection__select-ranges{
   display: flex;
   justify-content: space-between;
-  input{
+  margin-bottom: 52px;
+  input[type="number"]{
     width: 124px;
     border: 1px solid rgba(10, 10, 10, 0.3);
     border-radius: 9px;
     padding: 16px;
-    &::placeholder{
-      @include f400;
-      font-size: 18px;
-      color: $black;
+    @include f400;
+    font-size: 18px;
+    color: $black;
     }
   }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+  }
+  .selection__slider{
+    height: 16px;
+    border-radius: 5px;
+    width: 420px;
+    background-color: rgba(10, 10, 10, 0.1);
+    position: relative;
+    &-progress{
+      height: 8px;
+      background-color: $bg;
+      border-radius: 5px;
+      position: absolute;
+      left: 0;
+      right: 89%;
+      top: 4px;
+    }
+    span{
+      position: absolute;
+      @include f400;
+      font-size: 16px;
+      color: rgba(10, 10, 10, 0.4);
+      top: 22px;
+    }
+    .left{
+      left: 2px;
+    }
+    .right{
+      left: 340px;
+    }
+    .right-square{
+      left: 385px;
+    }
+  }
+  .selection__slider-progress.square{
+      right: 41%;
+  }
+  .range-input{
+    margin-top: 20px;
+    position: relative;
+    & input{
+      position: absolute;
+      top: 5px;
+      height: 5px;
+      width: 100%;
+      appearance: none;
+      background: none;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    appearance: none;
+    background-color:$black;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    border: none;
+    cursor: pointer;
+    -moz-appearance: none;
+    background-color:$black;
+  }
+ 
+
   input[type="range"]{
     display: block;
     margin-bottom: 40px;
   }
-}
+
 .selection__select-title{
   @include f600;
   font-size: 24px;
@@ -675,8 +757,8 @@ position: absolute;
   span{
     color: $text;
   }
-  
 }
+
 .selection__select-item{
   margin-top: 62px;
   select{

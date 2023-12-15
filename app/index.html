@@ -451,7 +451,7 @@
         <img class="img8 img-responsive" src="../images/gallery/gallery8.jpg" />
       </div>
       <div class="image-popup-container" id="imagePopup">
-        <span class="close-button" onclick="closeImage()">x</span>
+        <span class="close-button" onclick="closeImage()">&times</span>
         <img src="" alt="Popup image" id="popupImage">
       </div>
     </section>
@@ -474,19 +474,36 @@
                     <div class="selection__select-title">
                       Выберите цену<span> (₽)</span>
                     </div>
-                    <input type="number" placeholder="0">
-                    <input type="number" placeholder="3990000">
-                    <input type="range">
+                    <input type="number" class="input-min" value="0">
+                    <input type="number" class="input-max" value="3990000">
+                    <div class="range-input">
+                      <input type="range" class="range-min" min="0" max="50000000" value="0" step="1000000">
+                      <input type="range" class="range-max" min="0" max="50000000" value="3990000" step="1000000">
+                    </div>
+                    <div class="selection__slider">
+                      <div class="selection__slider-progress">
+                      </div>
+                      <span class="left">0</span><span class="right">49 990 000</span>
+                    </div>
                   </div>
+
                 </div>
                 <div class="selection__select-range">
-                  <div class="selection__select-form">
+                  <div class="selection__select-form square">
                     <div class="selection__select-title">
                       Выберите площадь<span> (м<sup>2</sup>)</span>
                     </div>
-                    <input type="number" placeholder="0">
-                    <input type="number" placeholder="1200">
-                    <input type="range">
+                    <input type="number" class="input-min square" value="0">
+                    <input type="number" class="input-max square" value="1200">
+                    <div class="range-input square">
+                      <input type="range" class="range-min square" min="0" max="2000" value="0" step="100">
+                      <input type="range" class="range-max square" min="0" max="2000" value="1200" step="100">
+                    </div>
+                  </div>
+                  <div class="selection__slider">
+                    <div class="selection__slider-progress square ">
+                    </div>
+                    <span class="left">0</span><span class="right-square">2000</span>
                   </div>
                 </div>
               </div>
