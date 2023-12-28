@@ -30,3 +30,40 @@ body{
    max-width: 1720px;
    margin: 0 auto;
 }
+.wrapper{
+display: flex;
+flex-direction: column;
+min-height: 100%;
+}
+.content__page{
+flex: 1 0 auto;
+}
+.breadcrumbs__inner{
+    padding: 30px 0 40px;
+    overflow: hidden;
+    width: 1200px;
+}
+.breadcrumbs__list{
+    display: flex;
+    margin-right: 12px;
+    font-size: 14px;
+    padding: 16px 24px;
+    background-color: #fff;
+    border-radius: 24px;
+    width: 235px;
+        a{
+     @include f400;
+     color: #000;
+    }
+    span{
+        position: relative;
+        @include f600;
+        margin-left: 40px;
+    }
+    span::before{
+        content: url(../images/about/arrow-left.png);
+        top: 3px;
+        left:-29px;
+        position: absolute;
+    }
+}
