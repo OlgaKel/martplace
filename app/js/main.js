@@ -1,6 +1,6 @@
 
 //start gallery
-document.querySelectorAll(".img-responsive").forEach(img =>{
+/*document.querySelectorAll(".img-responsive").forEach(img =>{
    img.onclick = () => {
       document.querySelector(".image-popup-container").style.display = 'block';
       document.querySelector("#popupImage").src = img.getAttribute('src');
@@ -102,7 +102,7 @@ rangeInputSquare.forEach(input =>{
       }
 });
 });
-
+*/
 //end range added
 $(function(){
 
@@ -112,11 +112,28 @@ $(function(){
    slidesToScroll: 1,
    arrows: true,
        });
+       
        $('.review__slider').slick({
              infinite: true,
        slidesToShow: 3,
        slidesToScroll: 1,
        arrows: true,
            });
- });
  
+          
+          $('.project__inner-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+          });
+          $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.project__inner-slider',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+          });
+});

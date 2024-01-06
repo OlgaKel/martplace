@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Biryani:wght@400;600;700&family=Lora:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content__page">
+      <header class="header__page">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <a href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li><a href="catalog.html">каталог</a></li>
+                <li><a href="about.html">о компании</a></li>
+                <li><a href="faq.html">вопросы и ответы</a></li>
+                <li><a href="#">вакансии</a></li>
+              </ul>
+            </nav>
+            <div class="header__btn">
+              <a class="header__btn-link" href="#">контакты</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="index.html">Главная</a></li>
+              <li><span>Каталог</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="catalog__inner">
+        <div class="container">
+          <div class="catalog__inner-wrapper">
+            <div class="catalog__inner-aside">
+              <h3 class="about__title">КАТАЛОГ</h3>
+              <div class="catalog__inner-range">
+                <form class="selection__select-item catalog">
+                  <div class="catalog__select-ranges">
+
+                    <div class="selection__select-range catalog">
+                      <div class="selection__select-form">
+                        <div class="selection__select-title catalog">
+                          Цена
+                        </div>
+                        <input type="number" class="input-min" value="0">
+                        <input type="number" class="input-max" value="3990000">
+                        <div class="range-input">
+                          <input type="range" class="range-min" min="0" max="50000000" value="0" step="1000000">
+                          <input type="range" class="range-max" min="0" max="50000000" value="3990000" step="1000000">
+                        </div>
+                        <div class="selection__slider catalog">
+                          <div class="selection__slider-progress">
+                          </div>
+                          <span class="left">0</span><span class="right">49 990 000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="selection__select-range catalog">
+                      <div class="selection__select-form square">
+                        <div class="selection__select-title catalog">
+                          Площадь
+                        </div>
+                        <input type="number" class="input-min square" value="0">
+                        <input type="number" class="input-max square" value="1200">
+                        <div class="range-input square">
+                          <input type="range" class="range-min square" min="0" max="2000" value="0" step="100">
+                          <input type="range" class="range-max square" min="0" max="2000" value="1200" step="100">
+                        </div>
+                      </div>
+                      <div class="selection__slider catalog">
+                        <div class="selection__slider-progress square ">
+                        </div>
+                        <span class="left">0</span><span class="right-square">2000</span>
+                      </div>
+                    </div>
+
+                    <div class="selection__select-range catalog">
+                      <div class="selection__select-form square">
+                        <div class="selection__select-title catalog">
+                          Площадь застройки
+                        </div>
+                        <input type="number" class="input-min square" value="0">
+                        <input type="number" class="input-max square" value="800">
+                        <div class="range-input square">
+                          <input type="range" class="range-min square" min="0" max="2000" value="0" step="100">
+                          <input type="range" class="range-max square" min="0" max="2000" value="1200" step="100">
+                        </div>
+                      </div>
+                      <div class="selection__slider catalog">
+                        <div class="selection__slider-progress square ">
+                        </div>
+                        <span class="left">0</span><span class="right-square">2000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="catalog__btn" type="submit">СБРОСИТЬ</button>
+                </form>
+              </div>
+            </div>
+            <div class="catalog__inner-items">
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../app/images/project_1.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 1
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>5 890 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>120 м<sup>2</sup></span>
+                      <p>Этажность:</p><span></span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../app/images/project_2.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 2
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>4 400 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../app/images/project_2.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 1
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <pre>5 890 000p</pre>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../app/images/project_1.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 1
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>5 890 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>120 м<sup>2</sup></span>
+                      <p>Этажность:</p><span></span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../app/images/project_2.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 2
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>4 400 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../app/images/project_2.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 2
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>4 400 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../app/images/project_2.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 2
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>4 400 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__item">
+                <div class="project__item-img">
+                  <img src="../app/images/project_2.jpg" alt="">
+                </div>
+                <div class="project__item-top">
+                  <div class="project__item-info">
+                    <div class="project__item-title">
+                      проект 2
+                      <p>Каркасный дом 10,0х11 м</p>
+                    </div>
+                    <div class="project__item-coast">
+                      <span>4 400 000p</span>
+                    </div>
+                  </div>
+                  <div class="project__item-list">
+                    <div class="project__item-sublist">
+                      <p>Площадь:</p><span class="sublist">190 м<sup>2</sup></span>
+                      <p>Размер:</p><span class="sublist">10,0х11 м</span>
+                    </div>
+                    <div class="project__item-sublist">
+                      <p>Площадь застройки:</p><span>100 м<sup>2</sup></span>
+                      <p>Этажность:</p><span>Один</span>
+                    </div>
+                  </div>
+                  <div class="project__item-btn">
+                    <a href="">подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__btn-item">
+                <button class="catalog__btn item">показать еще</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    <section class="consultation__catalog">
+      <div class="container">
+        <div class="consultation__inner">
+          <div class="consultation__inner-item">
+            <div class="consultation__item-title">
+              НЕ НАШЛИ ПОДХОДЯЩИЙ <span>ПРОЕКТ</span>?
+            </div>
+            <div class="consultation__item-img">
+              <img src="images/consultation.jpg" alt="" width="645" height="422">
+            </div>
+          </div>
+          <div class="consultation__inner-item">
+            <div class="consultation__item-text">
+              Получите <span>консультацию</span> от нашего архитектора-конструктора. Обсудим Ваши пожелания и создадим
+              <span>индивидуальный</span>
+              проект.
+            </div>
+            <div class="consultation__item-list">
+              <p>Согласуем площадь дома, исходя из потребностей Вашей семьи</p>
+              <p>Начертим планировку</p>
+              <p>Создадим 3d модель дома еще до подписания договора и озвучим точную, окончательную стоимость</p>
+            </div>
+            <form class="consultation__form">
+              <div class="consultation__form-inner">
+                <input type="text" placeholder="Имя">
+                <input type="tel" placeholder="+7 (999) 999-99-99">
+                <input type="email" placeholder="E-mail">
+              </div>
+              <button class="consultation__btn" type="submit">получить</button>
+            </form>
+            <div class="consultation__inner-subtext">
+              Нажимая кнопку “ПОЛУЧИТЬ”, Вы даете согласие на <a href="#">обработку своих персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-logo">
+          <a href="#">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="footer__inner-menu">
+          <ul class="footer__list">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="#">Вакансии</a></li>
+          </ul>
+        </div>
+        <a class="footer__inner-btn">Контакты</a>
+      </div>
+      <div class="footer__copyright">
+        PremiumHouse © 2023. Все права защищены.
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
