@@ -58,6 +58,7 @@ flex: 1 0 auto;
         position: relative;
         @include f600;
         margin-left: 40px;
+        color: black;
     }
     span::before{
         content: url(../images/about/arrow-left.png);
