@@ -1,6 +1,39 @@
 
+$(function(){
+
+      $('.project__items').slick({
+         infinite: true,
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   arrows: true,
+       });
+       
+       $('.review__slider').slick({
+             infinite: true,
+       slidesToShow: 3,
+       slidesToScroll: 1,
+       arrows: true,
+           });
+ 
+          
+          $('.project__inner-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+          });
+          $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.project__inner-slider',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+          });
+});
 //start gallery
-/*document.querySelectorAll(".img-responsive").forEach(img =>{
+document.querySelectorAll(".img-responsive").forEach(img =>{
    img.onclick = () => {
       document.querySelector(".image-popup-container").style.display = 'block';
       document.querySelector("#popupImage").src = img.getAttribute('src');
@@ -102,38 +135,18 @@ rangeInputSquare.forEach(input =>{
       }
 });
 });
-*/
-//end range added
-$(function(){
 
-      $('.project__items').slick({
-         infinite: true,
-   slidesToShow: 3,
-   slidesToScroll: 1,
-   arrows: true,
-       });
+//end range added
+
+//start burger menu
+
+       document.querySelector('.burger__menu').addEventListener('click',function(){
+      this.classList.toggle('active');
+       document.querySelector('.header__inner').classList.toggle('active');
        
-       $('.review__slider').slick({
-             infinite: true,
-       slidesToShow: 3,
-       slidesToScroll: 1,
-       arrows: true,
-           });
- 
-          
-          $('.project__inner-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-          });
-          $('.slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.project__inner-slider',
-            dots: true,
-            centerMode: true,
-            focusOnSelect: true
-          });
-});
+
+ })
+
+
+
+//end burger menu
