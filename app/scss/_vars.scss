@@ -1,0 +1,29 @@
+$bg:#FBDA94;
+$black:#0a0a0a;
+$text:#A37E30;
+
+@mixin l400{
+    font-family: 'Lora', serif;   
+    font-weight: 400;
+}
+
+@mixin l600{
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+@mixin f400{
+    font-family: 'Biryani', sans-serif;
+    font-weight: 400;
+}
+
+@mixin f600{
+    font-family: 'Biryani', sans-serif;
+        font-weight: 600;
+}
+
+@mixin f700{
+    font-family: 'Biryani', sans-serif;
+        font-weight: 700;
+}
+

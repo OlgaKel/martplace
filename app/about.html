@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Biryani:wght@400;600;700&family=Lora:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content__page">
+      <header class="header__page">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <a href="#">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <nav class="header__menu">
+              <ul class="menu__list">
+                <li><a href="catalog.html">каталог</a></li>
+                <li><a href="about.html">о компании</a></li>
+                <li><a href="faq.html">вопросы и ответы</a></li>
+                <li><a href="#">вакансии</a></li>
+              </ul>
+            </nav>
+            <div class="header__btn">
+              <a class="header__btn-link" href="#">контакты</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="index.html">Главная</a></li>
+              <li><span>О компании</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__inner-title">
+            О<span>&nbspНАС</span>
+          </div>
+          <div class="about__inner-info">
+            <div class="about__inner-img">
+              <img src="../app/images/about/about.jpg" alt="">
+            </div>
+            <div class="about__inner-text">
+              Мы строим дома и по индивидуальным проектам , а так же продаем готовые проекты в любую точку мира , этот
+              раздел нужно добавить с готовыми проектами к продаже .
+              Осуществляем строительство на готовом фундаменте , а так же сами занимаемся фундаментами .
+              Закупку материалов производим мы. Стоимость проекта рассчитывается индивидуально , в зависимости от
+              пожеланий заказчика и комплектации. Материал весь камерной сушки /строганный , покраска на производстве
+              фасада. Даем гарантию на дом. мы всегда ждем клиента на стройке в процессе строительства и готовы показать
+              построенные дома.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery__about">
+      <div class="gallery__about--img">
+        <img class="img__about--1 img-responsive" src="../app/images/about/gallery/about1.jpg" alt="">
+        <img class="img__about--2 img-responsive" src="../app/images/about/gallery/about2.jpg" alt="">
+        <img class="img__about--3 img-responsive" src="../app/images/about/gallery/about3.jpg" alt="">
+        <img class="img__about--4 img-responsive" src="../app/images/about/gallery/about4.jpg" alt="">
+        <img class="img__about--5 img-responsive" src="../app/images/about/gallery/about5.jpg" alt="">
+        <img class="img__about--6 img-responsive" src="../app/images/about/gallery/about6.jpg" alt="">
+        <img class="img__about--7 img-responsive" src="../app/images/about/gallery/about7.jpg" alt="">
+        <img class="img__about--8 img-responsive" src="../app/images/about/gallery/about8.jpg" alt="">
+      </div>
+      <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">&times</span>
+        <img src="" alt="Popup image" id="popupImage">
+      </div>
+    </section>
+    <section class="receive">
+      <div class="container">
+        <div class="receive__inner">
+          <h4 class="about__title">Что Вы <span>получаете</span>?</h4>
+          <div class="receive__list">
+            <div class="receive__item">
+              <div class="receive__item--title">
+                Скрупулезно разработанный проект
+              </div>
+              <div class="receive__item--text">
+                Создание детального плана — первый и критически важный шаг в построении загородного дома. С тщательным
+                планированием Вы не столкнетесь с превышением бюджета, задержками в строительстве и несоответствием
+                конечного результата Вашим ожиданиям.
+              </div>
+            </div>
+            <div class="receive__item item-2">
+              <div class="receive__item--title">
+                Подбор необходимых стройматериалов
+              </div>
+              <div class="receive__item--text">
+                Каждый строительный материал имеет свои сильные и слабые стороны, и важно выбрать те, которые лучше
+                всего
+                подходят для Вашего проекта. Мы подберем такие стройматериалы, чтобы это в последствии не привело
+                к увеличению затрат, низкому качеству строительства и проблемам с эксплуатацией. </div>
+            </div>
+            <div class="receive__item">
+              <div class="receive__item--title">
+                Внимание к деталям и отделке
+              </div>
+              <div class="receive__item--text">
+                Мы сконцентрированы не только на больших аспектах проекта, но и не забываем о важности мелочей. Ведь
+                именно
+                детали и отделка придают дому его уникальный характер и чувство домашнего уюта. Будь то выбор подходящих
+                дверных ручек, подбор цвета для стен или выбор правильного освещения, все эти мелочи вместе создают
+                общую
+                картину Вашего дома.
+              </div>
+            </div>
+            <div class="receive__item">
+              <div class="receive__item--title">
+                Точное соблюдение сроков строительства
+              </div>
+              <div class="receive__item--text">
+                Причины задержек в строительстве могут быть разнообразными, включая плохую погоду, проблемы с поставкой
+                материалов, непредвиденные трудности на стадии строительства и т. д. Однако правильное планирование
+                и эффективное управление проектом могут помочь минимизировать эти риски. </div>
+            </div>
+            <div class="receive__item item-5">
+              <div class="receive__item--title">
+                Соответствие проекта бюджету
+              </div>
+              <div class="receive__item--text">
+                Несоответствие проекта бюджету может привести к финансовым трудностям, незавершенным работам и низкому
+                качеству строительства.
+                Прежде чем приступить к строительству, мы тщательно планируем бюджет и придерживаемся его. При
+                составлении
+                сметы мы учитываем все аспекты проекта, включая строительные материалы, оплату труда, разрешения,
+                оборудование и непредвиденные расходы.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stage">
+      <div class="container">
+        <div class="stage__inner">
+          <h4 class="about__title">Этапы <span>работ</span></h4>
+          <div class="stage__list">
+            <div class="stage__item">
+              <div class="stage__item--inner">
+                <div class="stage__item--num">
+                  01
+                </div>
+                <div class="stage__item--title">
+                  Предварительное обсуждение (без оплаты)
+                </div>
+              </div>
+              <ul class="stage__item--list">
+                <li>Выявление Ваших потребностей к набору помещений и пожеланий к архитектуре</li>
+                <li>Разработка планировки</li>
+                <li>Расчет стоимости фундамента, дома с отделками и всей инженерией </li>
+                <li>Оформление и отправка развернутого предложения на строительство дома «под ключ»</li>
+              </ul>
+            </div>
+            <div class="stage__item">
+              <div class="stage__item--inner">
+                <div class="stage__item--num">
+                  02
+                </div>
+                <div class="stage__item--title">
+                  Предварительные работы
+                </div>
+              </div>
+              <ul class="stage__item--list">
+                <li>Разработка 3D модели дома при участии Заказчика</li>
+                <li>Выезд на участок для геологического исследования грунта и визуальной постановки дома на участке</li>
+                <li>Подготовка и отправка «Договора» для ознакомления и согласования </li>
+              </ul>
+            </div>
+            <div class="stage__item">
+              <div class="stage__item--inner">
+                <div class="stage__item--num">
+                  03
+                </div>
+                <div class="stage__item--title">
+                  Договор
+                </div>
+              </div>
+              <ul class="stage__item--list">
+                <li>Подписание Договора</li>
+                <li>Внесение первого платежа 30%</li>
+                <li>Разработка проектной документации</li>
+                <li>Начало выполнения работ в течение 10 дней</li>
+              </ul>
+            </div>
+            <div class="stage__item">
+              <div class="stage__item--inner">
+                <div class="stage__item--num">
+                  04
+                </div>
+                <div class="stage__item--title">
+                  Строительство
+                </div>
+              </div>
+              <ul class="stage__item--list">
+                <li>Монтаж фундамента</li>
+                <li>Сборка каркаса</li>
+                <li>Монтаж кровли, ветрозащитных плит, окон</li>
+                <li>Монтаж утеплителя, пароизоляции, обрешетки</li>
+                <li>Монтаж скрытых инженерных систем внутри дома с параллельной отделкой фасада</li>
+                <li>Внутренняя отделка</li>
+                <li>Пусконаладочные работы инженерных систем</li>
+              </ul>
+            </div>
+            <div class="stage__item">
+              <div class="stage__item--inner">
+                <div class="stage__item--num">
+                  05
+                </div>
+                <div class="stage__item--title">
+                  Сдача дома
+                </div>
+              </div>
+              <ul class="stage__item--list">
+                <li>Сдача-приемка дома</li>
+                <li>Вручение ключей счастливому Заказчику</li>
+                <li>Вывоз строительного мусора</li>
+                <li>Вывоз бытовки и биотуалета</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="remember">
+      <div class="container">
+        <div class="remember__inner">
+          <h4 class="about__title">
+            Про что мы <span>не забываем</span>
+          </h4>
+          <div class="remember__list">
+            <div class="remember__item">
+              <div class="remember__item--title">
+                Тщательно подходим к выбору места для строительства Вашего дома
+              </div>
+              <div class="remember__item--text">
+                Выбор неподходящего участка может привести к дополнительным трудностям в процессе строительства и может
+                снизить комфорт проживания.<br>
+                Важно учитывать многие факторы при выборе участка. Это включает в себя качество почвы, наличие воды
+                и электричества, доступность и уровень шума. Мы также учитываем планировку местности, включая угол
+                наклона и ориентацию участка относительно солнца.<br>
+                Помимо этого, обязательно проверяем местные строительные кодексы и ограничения. Они могут ограничивать
+                размер, стиль или тип будущего здания.
+              </div>
+            </div>
+            <div class="remember__item">
+              <div class="remember__item--title">
+                Учитываем факторы климата и ландшафта
+              </div>
+              <div class="remember__item--text">
+                Факторы климата и ландшафта играют решающую роль в процессе строительства и обустройства загородного
+                дома. Игнорирование этих факторов может привести к серьезным проблемам, включая структурные повреждения
+                и увеличенные затраты на энергию.<br>
+                Климат может влиять на выбор строительных материалов, систем отопления и охлаждения, а также
+                на планировку дома.<br>
+                Ландшафт также играет роль в процессе строительства. Участок с крутыми склонами или близко
+                расположенными водными телами может потребовать дополнительных усилий по подготовке и защите. </div>
+            </div>
+            <div class="remember__item">
+              <div class="remember__item--title">
+                Уделяем внимание водоснабжению и канализации
+              </div>
+              <div class="remember__item--text">
+                Недостаточное внимание к этим элементам может привести к серьезным проблемам, таким как недостаток воды,
+                проблемы с гигиеной и даже здоровьем.<br>
+                При планировании водоснабжения необходимо учесть несколько факторов. Это включает в себя доступность
+                источников воды, таких как скважины или водопровод, а также качество воды.<br>
+                Канализационная система также требует продуманного подхода. Без должного учета может возникнуть ряд
+                проблем, включая запахи, засоры и проблемы с отводом сточных вод.<br>
+                Мы разработаем и установим эффективные системы водоснабжения и канализации. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="values">
+      <div class="container">
+        <div class="values__inner">
+          <h4 class="about__title">
+            Ценности
+          </h4>
+          <div class="values__box">
+            <div class="values__item">
+              <div class="values__item-box">
+                <div class="values__item--title">
+                  Качество
+                </div>
+                <div class="values__item--text">
+                  Мы строим дома, которые отвечают самым высоким стандартам качества, используя только надежные
+                  и проверенные материалы и технологии.
+                </div>
+              </div>
+              <svg class="values__item--svg" width="200" height="200" viewBox="0 0 200 200" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M60.7498 101.916L64.6248 109.666C67.9415 116.299 75.7331 122.924 84.7748 126.691L93.3915 130.283L87.4165 136.258C87.3165 136.558 87.1331 137.091 86.8831 137.624C86.5831 138.291 86.0498 139.291 85.1248 140.208L58.4581 166.874C55.5748 169.766 51.9165 169.183 50.1498 168.474C49.0423 168.03 48.0464 167.348 47.2331 166.474C45.9955 165.164 45.299 163.435 45.2831 161.633V148.716H32.3665C29.6248 148.716 26.2831 147.291 24.8998 143.849C24.5245 142.917 24.347 141.918 24.3786 140.913C24.4101 139.909 24.6501 138.923 25.0831 138.016C25.6556 136.826 26.5253 135.805 27.6081 135.049L60.7498 101.916ZM72.9248 134.733L57.7831 149.874V136.208H44.1165L58.0415 122.291C62.2245 127.289 67.2643 131.502 72.9248 134.733ZM138.783 108.874C139.955 107.704 141.544 107.047 143.2 107.047C144.856 107.047 146.445 107.704 147.616 108.874L173.45 134.708C176.333 137.591 175.75 141.249 175.05 143.016C174.606 144.124 173.923 145.119 173.05 145.933C171.736 147.169 170.004 147.863 168.2 147.874H154.45V161.624C154.45 164.374 153.033 167.724 149.583 169.099C148.651 169.473 147.651 169.649 146.646 169.616C145.642 169.583 144.656 169.342 143.75 168.908C142.563 168.334 141.545 167.464 140.791 166.383L114.616 140.216L112.95 138.549C111.846 137.365 111.245 135.798 111.273 134.178C111.302 132.559 111.958 131.014 113.103 129.869C114.248 128.724 115.793 128.068 117.412 128.04C119.031 128.011 120.598 128.612 121.783 129.716L141.95 149.874V135.374H156.45L138.783 117.708C137.613 116.536 136.955 114.947 136.955 113.291C136.955 111.635 137.613 110.046 138.783 108.874Z"
+                  fill="url(#paint0_linear_472_6980)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M44.4502 86.6328C44.4502 55.6745 69.7502 30.3828 100.7 30.3828C131.65 30.3828 156.95 55.6745 156.95 86.6328C156.95 98.0078 153.167 108.341 147.609 116.708C141.059 126.966 130.767 135.433 118.442 139.249C112.722 141.15 106.727 142.094 100.7 142.041C93.4752 142.041 86.7502 141.141 79.9085 138.208C78.4023 137.544 77.2186 136.313 76.6146 134.782C76.0105 133.251 76.0349 131.543 76.6823 130.03C77.3298 128.517 78.5481 127.32 80.0727 126.699C81.5973 126.079 83.305 126.085 84.8252 126.716C89.6585 128.783 94.5919 129.549 100.7 129.549C105.884 129.549 110.217 128.816 114.559 127.366L114.625 127.341L114.7 127.324C123.992 124.466 131.992 117.966 137.1 109.941L137.134 109.883L137.167 109.833C141.584 103.199 144.45 95.2245 144.45 86.6328C144.45 62.5828 124.75 42.8828 100.7 42.8828C76.6502 42.8828 56.9502 62.5828 56.9502 86.6328C56.9502 94.6078 59.1169 101.908 62.8335 108.591C63.2324 109.308 63.4861 110.097 63.5801 110.913C63.6741 111.728 63.6066 112.554 63.3814 113.343C63.1563 114.133 62.7778 114.87 62.2677 115.513C61.7576 116.156 61.1259 116.692 60.4085 117.091C59.6912 117.49 58.9023 117.744 58.0869 117.838C57.2715 117.932 56.4456 117.864 55.6563 117.639C54.867 117.414 54.1298 117.035 53.4867 116.525C52.8437 116.015 52.3074 115.383 51.9085 114.666C47.2835 106.349 44.4502 96.9828 44.4502 86.6328Z"
+                  fill="url(#paint0_linear_472_6980)" />
+                <defs>
+                  <linearGradient id="paint0_linear_472_6961" x1="62.2273" y1="144.771" x2="95.8906" y2="18.2325"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" />
+                    <stop offset="1" stop-color="#E1C78F" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_472_6961" x1="72.6054" y1="101.061" x2="170.393" y2="-64.7195"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" />
+                    <stop offset="1" stop-color="#E1C78F" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="values__item">
+              <div class="values__item-box">
+                <div class="values__item--title">
+                  Надежность
+                </div>
+                <div class="values__item--text">
+                  Мы гарантируем соблюдение сроков строительства, прописываем все циклы и объемы работ, ничего не
+                  скрываем
+                  и не накручиваем, поддерживаем связь с заказчиками на всех этапах проекта.
+                </div>
+              </div>
+              <svg class="values__item--svg" width="169" height="200" viewBox="0 0 169 200" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M110.375 39.1253C107.528 36.5371 103.819 35.1029 99.971 35.1029C96.1233 35.1029 92.4138 36.5371 89.5668 39.1253L89.5168 39.1753L48.0001 75.7003C43.1585 80.6003 39.9585 87.3587 39.9585 93.6503V152.817C39.9585 159.359 45.5001 164.9 52.0418 164.9H147.875C155.575 164.9 160.475 159.184 159.983 153.334L159.958 153.075V93.6503C159.958 86.9503 157.292 80.392 152.092 75.8503L152.083 75.842L110.375 39.1253ZM118.708 29.8087C113.57 25.1708 106.893 22.6035 99.971 22.6035C93.0487 22.6035 86.3723 25.1708 81.2335 29.8087L39.4418 66.5837L39.3001 66.7253C32.5501 73.4753 27.4668 83.3253 27.4668 93.642V152.809C27.5105 159.315 30.1145 165.543 34.7153 170.143C39.3162 174.744 45.5437 177.348 52.0501 177.392H147.883C161.767 177.392 173.467 166.584 172.467 152.575V93.642C172.467 83.6837 168.483 73.5753 160.342 66.4503L118.708 29.8087Z"
+                  fill="url(#paint0_linear_472_6980)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M100.383 89.9004C97.6208 89.9004 94.9713 90.9979 93.0178 92.9514C91.0643 94.9049 89.9668 97.5544 89.9668 100.317C89.9668 103.08 91.0643 105.729 93.0178 107.683C94.9713 109.636 97.6208 110.734 100.383 110.734C103.146 110.734 105.796 109.636 107.749 107.683C109.703 105.729 110.8 103.08 110.8 100.317C110.8 97.5544 109.703 94.9049 107.749 92.9514C105.796 90.9979 103.146 89.9004 100.383 89.9004ZM77.4668 100.317C77.4668 94.2392 79.8812 88.4102 84.1789 84.1125C88.4766 79.8148 94.3056 77.4004 100.383 77.4004C106.461 77.4004 112.29 79.8148 116.588 84.1125C120.886 88.4102 123.3 94.2392 123.3 100.317C123.3 106.395 120.886 112.224 116.588 116.522C112.29 120.819 106.461 123.234 100.383 123.234C94.3056 123.234 88.4766 120.819 84.1789 116.522C79.8812 112.224 77.4668 106.395 77.4668 100.317Z"
+                  fill="url(#paint1_linear_472_6980)" />
+                <defs>
+                  <linearGradient id="paint0_linear_472_6980" x1="63.7706" y1="120.58" x2="203.872" y2="-100.346"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#B78E39" />
+                    <stop offset="1" stop-color="#E1C78F" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_472_6980" x1="88.9374" y1="106.412" x2="129.221" y2="38.6278"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#B78E39" />
+                    <stop offset="1" stop-color="#E1C78F" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="values__item">
+              <div class="values__item-box">
+                <div class="values__item--title">
+                  Профессионализм
+                </div>
+                <div class="values__item--text">
+                  Наша компания состоит из опытных специалистов, которые обладают глубокими знаниями и навыками
+                  в области
+                  строительства загородных домов.
+                </div>
+              </div>
+              <svg class="values__item--svg" width="169" height="200" viewBox="0 0 169 200" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M62.5004 35.417C55.3255 35.4433 48.4521 38.3052 43.3786 43.3786C38.3052 48.452 35.4434 55.3255 35.417 62.5003V100C35.4093 108.484 37.0746 116.885 40.3175 124.724C43.5604 132.563 48.3173 139.686 54.3159 145.685C60.3146 151.683 67.4372 156.44 75.2763 159.683C83.1154 162.926 91.517 164.591 100 164.584C134.884 164.584 164.584 134.884 164.584 100V62.5003C164.557 55.3255 161.695 48.452 156.622 43.3786C151.549 38.3052 144.675 35.4433 137.5 35.417H62.5004ZM22.917 62.5003C22.9434 52.0103 27.1223 41.9574 34.5399 34.5398C41.9575 27.1222 52.0103 22.9434 62.5004 22.917H137.5C147.99 22.9434 158.043 27.1222 165.461 34.5398C172.878 41.9574 177.057 52.0103 177.084 62.5003V100C177.084 141.784 141.784 177.084 100 177.084C89.8755 177.091 79.8484 175.103 70.4928 171.232C61.1371 167.361 52.6365 161.683 45.4771 154.524C38.3177 147.364 32.6401 138.864 28.769 129.508C24.8979 120.152 22.9093 110.125 22.917 100V62.5003Z"
+                  fill="url(#paint0_linear_472_6968)" />
+                <defs>
+                  <linearGradient id="paint0_linear_472_6968" x1="61.5" y1="120.5" x2="197" y2="-107.5"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#B78E39" />
+                    <stop offset="1" stop-color="#E1C78F" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="values__item">
+              <div class="values__item-box">
+                <div class="values__item--title">
+                  Индивидуальный подход
+                </div>
+                <div class="values__item--text">
+                  Мы уделяем особое внимание пожеланиям и потребностям наших заказчиков, создавая уникальные
+                  и индивидуальные дома, отвечающие их представлениям о комфорте и эстетике. Наши дома понравятся даже
+                  самым взыскательным заказчикам.
+                </div>
+              </div>
+              <svg class="values__item--svg" width="200" height="200" viewBox="0 0 200 200" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M99.1667 30.417C94.844 30.417 90.5636 31.2684 86.57 32.9226C82.5764 34.5768 78.9477 37.0015 75.8911 40.0581C72.8345 43.1147 70.4099 46.7434 68.7556 50.737C67.1014 54.7306 66.25 59.011 66.25 63.3337C66.25 67.6563 67.1014 71.9367 68.7556 75.9303C70.4099 79.924 72.8345 83.5527 75.8911 86.6093C78.9477 89.6659 82.5764 92.0905 86.57 93.7447C90.5636 95.3989 94.844 96.2503 99.1667 96.2503C107.897 96.2503 116.269 92.7823 122.442 86.6093C128.615 80.4362 132.083 72.0637 132.083 63.3337C132.083 54.6036 128.615 46.2311 122.442 40.0581C116.269 33.885 107.897 30.417 99.1667 30.417ZM53.75 63.3337C53.75 57.3695 54.9247 51.4637 57.2071 45.9535C59.4895 40.4432 62.8349 35.4366 67.0522 31.2192C71.2696 27.0019 76.2763 23.6565 81.7865 21.3741C87.2967 19.0917 93.2025 17.917 99.1667 17.917C105.131 17.917 111.037 19.0917 116.547 21.3741C122.057 23.6565 127.064 27.0019 131.281 31.2192C135.498 35.4366 138.844 40.4432 141.126 45.9535C143.409 51.4637 144.583 57.3695 144.583 63.3337C144.583 75.3789 139.798 86.9308 131.281 95.4481C122.764 103.965 111.212 108.75 99.1667 108.75C87.1214 108.75 75.5695 103.965 67.0522 95.4481C58.535 86.9308 53.75 75.3789 53.75 63.3337Z"
+                  fill="url(#paint0_linear_472_6974)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M86.667 108.75C66.7837 108.75 50.417 125.117 50.417 145C50.406 148.231 51.0343 151.433 52.2659 154.421C53.4974 157.408 55.3078 160.123 57.5927 162.408C59.8777 164.693 62.5921 166.503 65.5797 167.734C68.5672 168.966 71.7689 169.594 75.0003 169.583H124.167C138 169.583 148.834 158.408 149.584 144.842C149.5 125.033 133.167 108.75 113.334 108.75H86.667ZM37.917 145C37.917 118.217 59.8837 96.25 86.667 96.25H113.334C140.117 96.25 162.084 118.217 162.084 145V145.308C161.084 165.017 145.284 182.083 124.167 182.083H75.0003C53.942 182.083 37.917 165.008 37.917 145Z"
+                  fill="url(#paint1_linear_472_6974)" />
+                <defs>
+                  <linearGradient id="paint0_linear_472_6974" x1="76.4827" y1="75.4118" x2="156.318" y2="-58.9233"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#B78E39" />
+                    <stop offset="1" stop-color="#E1C78F" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_472_6974" x1="68.992" y1="150.58" x2="129.371" y2="3.61026"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#B78E39" />
+                    <stop offset="1" stop-color="#E1C78F" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mission">
+      <div class="container">
+        <div class="mission__inner">
+          <h4 class="about__title">
+            Миссия и <span>цель</span>
+          </h4>
+          <div class="mission__box">
+            <div class="mission__item">
+              <div class="mission__item--title">
+                Миссия
+              </div>
+              <div class="mission__item--text">
+                нашей компании заключается в создании качественных коттеджей и загородных домов, которые станут
+                идеальным пространством для жизни и отдыха наших заказчиков. Мы стремимся удовлетворить их потребности
+                и ожидания, предлагая высокий уровень сервиса и индивидуальный подход к каждому проекту.
+              </div>
+            </div>
+            <div class="mission__item">
+              <div class="mission__item--title">
+                Цель
+              </div>
+              <div class="mission__item--text">
+                Наша компания стремится сделать процесс строительства загородного дома приятным и результативным для
+                каждого нашего заказчика, предоставляя им надежные и комфортные дома, которые будут служить их семье
+                в течение многих лет.
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="selection">
+      <div class="container">
+        <div class="selection__inner">
+          <div class="selection__item">
+            <div class="selection__item-title">
+              ПОДБОР <span>ПРОЕКТА</span>
+            </div>
+            <div class="selection__item-img">
+              <img src="../app/images/select.jpg" alt="">
+            </div>
+          </div>
+          <div class="selection__select">
+            <form class="selection__select-item">
+              <div class="selection__select-ranges">
+                <div class="selection__select-range">
+                  <div class="selection__select-form">
+                    <div class="selection__select-title">
+                      Выберите цену<span> (₽)</span>
+                    </div>
+                    <input type="number" class="input-min" value="0">
+                    <input type="number" class="input-max" value="3990000">
+                    <div class="range-input">
+                      <input type="range" class="range-min" min="0" max="50000000" value="0" step="1000000">
+                      <input type="range" class="range-max" min="0" max="50000000" value="3990000" step="1000000">
+                    </div>
+                    <div class="selection__slider">
+                      <div class="selection__slider-progress">
+                      </div>
+                      <span class="left">0</span><span class="right">49 990 000</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="selection__select-range">
+                  <div class="selection__select-form square">
+                    <div class="selection__select-title">
+                      Выберите площадь<span> (м<sup>2</sup>)</span>
+                    </div>
+                    <input type="number" class="input-min square" value="0">
+                    <input type="number" class="input-max square" value="1200">
+                    <div class="range-input square">
+                      <input type="range" class="range-min square" min="0" max="2000" value="0" step="100">
+                      <input type="range" class="range-max square" min="0" max="2000" value="1200" step="100">
+                    </div>
+                  </div>
+                  <div class="selection__slider">
+                    <div class="selection__slider-progress square ">
+                    </div>
+                    <span class="left">0</span><span class="right-square">2000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="selection__select-title">
+                Технология строительства
+              </div>
+              <select>
+                <option value="">Каркасный дом</option>
+                <option value="">Каркасный дом</option>
+              </select>
+              <button class="selection__btn" type="submit">ПОДОБРАТЬ ПРОЕКТ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mortgage">
+      <div class="container">
+        <div class="mortgage__inner">
+          <h4 class="about__title">
+            Ипотека
+          </h4>
+          <div class="mortgage__box">
+            <div class="mortgage__item">
+              <div class="mortgage__item-img">
+                <img src="../app/images/icons/mortgage-sber.png">
+              </div>
+              <div class="mortgage__item--title">
+                Предложение Сбербанка:
+              </div>
+              <ul class="mortgage__item--list">
+                <li>Максимальная сумма ипотечного кредита
+                  - 12 млн руб.</li>
+                <li>Взнос - 20%</li>
+                <li>Ставка - 5,3%</li>
+                <li>Срок - 30 лет</li>
+              </ul>
+            </div>
+            <div class="mortgage__item">
+              <div class="mortgage__item-img">
+                <img src="../app/images/icons/mortgage.png">
+              </div>
+              <div class="mortgage__item--title">
+                Предложение Дом.РФ
+              </div>
+              <ul class="mortgage__item--list">
+                <li>Максимальная сумма ипотечного кредита
+                  - 12 млн руб.</li>
+                <li>Взнос - 20%</li>
+                <li>Ставка - 5,5%</li>
+                <li>Срок - 30 лет</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="consultation__about">
+      <div class="container">
+        <div class="consultation__inner">
+          <h4 class="about__title">
+            консультация
+          </h4>
+          <form action="" class="consultation__form">
+            <div class="consultation__form--title">
+              Руководитель ипотечного отдела предложит наиболее <span>выгодные</span> условия и сэкономит
+              <span>Ваше</span> время
+              на подачу
+              документов
+            </div>
+            <div class="consultation__form--input">
+              <input type="text" placeholder="ФИО">
+              <input type="email" placeholder="E-mail">
+              <input type="text" placeholder="Дата рождения">
+              <input type="tel" placeholder="+7(999)999-99-99">
+            </div>
+            <button class="submit__btn" type="submit">
+              отправить
+            </button>
+            <p class="consultation__text">Нажимая кнопку “ОТПРАВИТЬ”, Вы даете согласие на <a href="#">обработку своих
+                персональных
+                данных</a>
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__inner-logo">
+            <a href="#">
+              <img src="images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="footer__inner-menu">
+            <ul class="footer__list">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+              <li><a href="#">Вакансии</a></li>
+            </ul>
+          </div>
+          <a class="footer__inner-btn">Контакты</a>
+        </div>
+        <div class="footer__copyright">
+          PremiumHouse © 2023. Все права защищены.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
